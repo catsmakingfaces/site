@@ -1,0 +1,105 @@
+---
+title: "Cats Making Faces"
+format:
+  html:
+    page-layout: full
+    toc: false
+---
+
+```{r}
+#| echo: false
+#| results: 'asis'
+
+cloud_name   <- "fqsd4oea"
+folder_path  <- "img-_"
+total_images <- 358
+
+base <- sprintf("https://res.cloudinary.com/%s/image/upload", cloud_name)
+
+image_list <- lapply(1:total_images, function(i) {
+  list(
+    full  = sprintf("%s/f_auto,q_auto,w_1200,c_limit/%s%d.jpg", base, folder_path, i),
+    thumb = sprintf("%s/f_auto,q_auto,w_160,h_120,c_fill/%s%d.jpg", base, folder_path, i)
+  )
+})
+
+json_images <- jsonlite::toJSON(image_list, auto_unbox = TRUE)
+
+cat("<script>const imagesArray = ", json_images, ";</script>", sep = "")
+```
+
+```{=html}
+<div class="gallery-container" style="display:flex; flex-direction:column; align-items:center; max-width:1100px; margin:40px auto;">
+
+  <div class="main-stage" id="main-stage" style="position:relative; width:100%; height:60vh; display:flex; align-items:center; justify-content:center; background:#000; border-radius:12px; overflow:hidden;">
+    <img id="active-view" src="" alt="Loading Gallery..." style="width:100%; height:100%; object-fit:contain; transition:opacity .2s ease-in-out;">
+
+    <button id="prev-btn" aria-label="Previous image" style="position:absolute; left:12px; top:50%; transform:translateY(-50%); z-index:2; background:rgba(0,0,0,.55); color:#fff; border:1px solid rgba(255,255,255,.4); border-radius:8px; padding:12px 16px; font-size:28px; line-height:1; cursor:pointer;">&larr;</button>
+    <button id="next-btn" aria-label="Next image" style="position:absolute; right:12px; top:50%; transform:translateY(-50%); z-index:2; background:rgba(0,0,0,.55); color:#fff; border:1px solid rgba(255,255,255,.4); border-radius:8px; padding:12px 16px; font-size:28px; line-height:1; cursor:pointer;">&rarr;</button>
+  </div>
+
+  <div style="margin:16px 0 24px; text-align:center;">
+    <span id="counter-display" style="font-variant-numeric:tabular-nums; letter-spacing:1px; color:#aaa;">0 / 0</span>
+  </div>
+
+  <div class="thumbnail-grid" id="dock-strip" style="display:grid; grid-template-columns:repeat(5, 1fr); gap:6px; width:100%;"></div>
+
+</div>
+```
+
+```{=html}
+<script>
+let currentIndex = 0;
+const stage = document.getElementById('main-stage');
+const activeView = document.getElementById('active-view');
+const counterDisplay = document.getElementById('counter-display');
+const dockStrip = document.getElementById('dock-strip');
+
+// Build the thumbnail grid (10 per row)
+imagesArray.forEach((img, idx) => {
+  const t = document.createElement('img');
+  t.src = img.thumb;
+  t.loading = "lazy";
+  t.alt = `Thumbnail ${idx + 1}`;
+  t.style = "width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer; border-radius:6px; opacity:.4; border:2px solid transparent; transition:all .2s ease;";
+  t.addEventListener('click', () => {
+    updateGallery(idx);
+    stage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+  dockStrip.appendChild(t);
+});
+
+function updateGallery(newIndex) {
+  const thumbs = dockStrip.children;
+
+  if (thumbs[currentIndex]) {
+    thumbs[currentIndex].style.opacity = "0.4";
+    thumbs[currentIndex].style.borderColor = "transparent";
+  }
+
+  currentIndex = newIndex;
+
+  if (thumbs[currentIndex]) {
+    thumbs[currentIndex].style.opacity = "1";
+    thumbs[currentIndex].style.borderColor = "#00ffff";
+  }
+
+  activeView.style.opacity = "0.3";
+  activeView.onload = () => { activeView.style.opacity = "1"; };
+  activeView.src = imagesArray[currentIndex].full;
+  counterDisplay.innerText = `${currentIndex + 1} / ${imagesArray.length}`;
+}
+
+const nextSlide = () => updateGallery((currentIndex + 1) % imagesArray.length);
+const prevSlide = () => updateGallery((currentIndex - 1 + imagesArray.length) % imagesArray.length);
+
+document.getElementById('next-btn').addEventListener('click', nextSlide);
+document.getElementById('prev-btn').addEventListener('click', prevSlide);
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight') nextSlide();
+  if (e.key === 'ArrowLeft') prevSlide();
+});
+
+updateGallery(0);
+</script>
+```

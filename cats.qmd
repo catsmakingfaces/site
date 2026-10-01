@@ -1,0 +1,101 @@
+---
+title: "Cats Making Faces"
+format:
+  html:
+    page-layout: full
+    toc: false
+---
+
+```{r}
+#| echo: false
+#| results: 'asis'
+
+cloud_name   <- "fqsd4oea"     
+folder_path  <- "cat_images/img-_"     # use %03d below instead of %d if files are padded (img-001)
+total_images <- 358
+
+base <- sprintf("https://res.cloudinary.com/%s/image/upload", cloud_name)
+
+image_list <- lapply(1:total_images, function(i) {
+  list(
+    full  = sprintf("%s/f_auto,q_auto,w_1600/%s%d.jpg", base, folder_path, i),
+    thumb = sprintf("%s/f_auto,q_auto,w_160,h_120,c_fill/%s%d.jpg", base, folder_path, i)
+  )
+})
+
+json_images <- jsonlite::toJSON(image_list, auto_unbox = TRUE)
+
+# Emit the data as a real JavaScript variable
+cat("<script>const imagesArray = ", json_images, ";</script>", sep = "")
+```
+
+<div class="gallery-container" style="display:flex; flex-direction:column; align-items:center; max-width:900px; margin:40px auto;">
+
+  <div class="main-stage" style="width:100%; height:60vh; display:flex; align-items:center; justify-content:center; background:#000; border-radius:12px; overflow:hidden;">
+    <img id="active-view" src="" alt="Loading Gallery..." style="max-width:100%; max-height:100%; object-fit:contain; transition:opacity .2s ease-in-out;">
+  </div>
+
+  <div class="navigation-controls" style="display:flex; align-items:center; justify-content:center; gap:40px; margin:20px 0 30px; width:100%;">
+    <button class="btn btn-outline-light" id="prev-btn" style="padding:8px 24px; font-size:18px;">&larr;</button>
+    <span id="counter-display" style="font-variant-numeric:tabular-nums; letter-spacing:1px; color:#aaa;">0 / 0</span>
+    <button class="btn btn-outline-light" id="next-btn" style="padding:8px 24px; font-size:18px;">&rarr;</button>
+  </div>
+
+  <div class="thumbnail-dock" id="dock-strip" style="display:flex; gap:10px; width:100%; overflow-x:auto; padding-bottom:10px; scroll-behavior:smooth;"></div>
+
+</div>
+
+<script>
+let currentIndex = 0;
+const activeView = document.getElementById('active-view');
+const counterDisplay = document.getElementById('counter-display');
+const dockStrip = document.getElementById('dock-strip');
+
+// 1. Build the thumbnail strip
+imagesArray.forEach((img, idx) => {
+  const t = document.createElement('img');
+  t.src = img.thumb;
+  t.loading = "lazy";
+  t.alt = `Thumbnail ${idx + 1}`;
+  t.style = "width:80px; height:60px; object-fit:cover; flex-shrink:0; cursor:pointer; border-radius:6px; opacity:.4; border:2px solid transparent; transition:all .2s ease;";
+  t.addEventListener('click', () => updateGallery(idx));
+  dockStrip.appendChild(t);
+});
+
+// 2. Show a given image and highlight its thumbnail
+function updateGallery(newIndex) {
+  const thumbs = dockStrip.children;
+
+  if (thumbs[currentIndex]) {
+    thumbs[currentIndex].style.opacity = "0.4";
+    thumbs[currentIndex].style.borderColor = "transparent";
+  }
+
+  currentIndex = newIndex;
+
+  if (thumbs[currentIndex]) {
+    thumbs[currentIndex].style.opacity = "1";
+    thumbs[currentIndex].style.borderColor = "#00ffff";
+    thumbs[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  }
+
+  activeView.style.opacity = "0.3";
+  activeView.onload = () => { activeView.style.opacity = "1"; };  // set BEFORE src
+  activeView.src = imagesArray[currentIndex].full;
+  counterDisplay.innerText = `${currentIndex + 1} / ${imagesArray.length}`;
+}
+
+// 3. Buttons and keyboard
+const nextSlide = () => updateGallery((currentIndex + 1) % imagesArray.length);
+const prevSlide = () => updateGallery((currentIndex - 1 + imagesArray.length) % imagesArray.length);
+
+document.getElementById('next-btn').addEventListener('click', nextSlide);
+document.getElementById('prev-btn').addEventListener('click', prevSlide);
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight') nextSlide();
+  if (e.key === 'ArrowLeft') prevSlide();
+});
+
+updateGallery(0);
+</script>
+---

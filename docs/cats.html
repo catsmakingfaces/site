@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Cats Making Faces</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Cats Making Faces</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Cats Making Faces</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<script>const imagesArray = [{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_1.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_1.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_2.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_2.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_3.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_3.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_4.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_4.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_5.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_5.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_6.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_6.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_7.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_7.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_8.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_8.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_9.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_9.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_10.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_10.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_11.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_11.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_12.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_12.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_13.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_13.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_14.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_14.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_15.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_15.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_16.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_16.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_17.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_17.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_18.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_18.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_19.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_19.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_20.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_20.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_21.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_21.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_22.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_22.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_23.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_23.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_24.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_24.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_25.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_25.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_26.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_26.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_27.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_27.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_28.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_28.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_29.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_29.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_30.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_30.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_31.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_31.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_32.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_32.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_33.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_33.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_34.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_34.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_35.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_35.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_36.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_36.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_37.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_37.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_38.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_38.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_39.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_39.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_40.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_40.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_41.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_41.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_42.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_42.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_43.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_43.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_44.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_44.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_45.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_45.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_46.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_46.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_47.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_47.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_48.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_48.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_49.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_49.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_50.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_50.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_51.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_51.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_52.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_52.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_53.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_53.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_54.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_54.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_55.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_55.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_56.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_56.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_57.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_57.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_58.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_58.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_59.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_59.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_60.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_60.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_61.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_61.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_62.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_62.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_63.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_63.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_64.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_64.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_65.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_65.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_66.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_66.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_67.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_67.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_68.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_68.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_69.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_69.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_70.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_70.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_71.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_71.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_72.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_72.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_73.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_73.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_74.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_74.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_75.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_75.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_76.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_76.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_77.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_77.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_78.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_78.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_79.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_79.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_80.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_80.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_81.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_81.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_82.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_82.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_83.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_83.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_84.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_84.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_85.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_85.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_86.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_86.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_87.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_87.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_88.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_88.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_89.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_89.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_90.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_90.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_91.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_91.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_92.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_92.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_93.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_93.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_94.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_94.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_95.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_95.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_96.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_96.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_97.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_97.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_98.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_98.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_99.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_99.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_100.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_100.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_101.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_101.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_102.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_102.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_103.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_103.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_104.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_104.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_105.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_105.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_106.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_106.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_107.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_107.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_108.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_108.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_109.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_109.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_110.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_110.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_111.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_111.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_112.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_112.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_113.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_113.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_114.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_114.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_115.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_115.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_116.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_116.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_117.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_117.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_118.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_118.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_119.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_119.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_120.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_120.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_121.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_121.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_122.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_122.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_123.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_123.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_124.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_124.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_125.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_125.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_126.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_126.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_127.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_127.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_128.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_128.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_129.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_129.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_130.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_130.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_131.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_131.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_132.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_132.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_133.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_133.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_134.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_134.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_135.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_135.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_136.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_136.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_137.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_137.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_138.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_138.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_139.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_139.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_140.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_140.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_141.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_141.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_142.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_142.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_143.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_143.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_144.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_144.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_145.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_145.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_146.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_146.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_147.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_147.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_148.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_148.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_149.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_149.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_150.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_150.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_151.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_151.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_152.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_152.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_153.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_153.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_154.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_154.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_155.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_155.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_156.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_156.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_157.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_157.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_158.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_158.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_159.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_159.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_160.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_160.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_161.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_161.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_162.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_162.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_163.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_163.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_164.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_164.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_165.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_165.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_166.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_166.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_167.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_167.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_168.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_168.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_169.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_169.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_170.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_170.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_171.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_171.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_172.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_172.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_173.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_173.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_174.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_174.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_175.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_175.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_176.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_176.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_177.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_177.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_178.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_178.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_179.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_179.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_180.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_180.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_181.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_181.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_182.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_182.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_183.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_183.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_184.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_184.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_185.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_185.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_186.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_186.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_187.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_187.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_188.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_188.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_189.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_189.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_190.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_190.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_191.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_191.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_192.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_192.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_193.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_193.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_194.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_194.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_195.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_195.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_196.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_196.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_197.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_197.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_198.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_198.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_199.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_199.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_200.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_200.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_201.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_201.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_202.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_202.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_203.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_203.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_204.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_204.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_205.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_205.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_206.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_206.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_207.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_207.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_208.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_208.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_209.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_209.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_210.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_210.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_211.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_211.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_212.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_212.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_213.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_213.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_214.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_214.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_215.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_215.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_216.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_216.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_217.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_217.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_218.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_218.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_219.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_219.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_220.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_220.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_221.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_221.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_222.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_222.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_223.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_223.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_224.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_224.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_225.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_225.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_226.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_226.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_227.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_227.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_228.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_228.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_229.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_229.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_230.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_230.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_231.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_231.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_232.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_232.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_233.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_233.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_234.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_234.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_235.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_235.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_236.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_236.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_237.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_237.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_238.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_238.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_239.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_239.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_240.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_240.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_241.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_241.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_242.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_242.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_243.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_243.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_244.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_244.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_245.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_245.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_246.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_246.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_247.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_247.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_248.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_248.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_249.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_249.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_250.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_250.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_251.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_251.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_252.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_252.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_253.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_253.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_254.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_254.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_255.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_255.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_256.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_256.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_257.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_257.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_258.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_258.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_259.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_259.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_260.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_260.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_261.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_261.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_262.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_262.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_263.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_263.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_264.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_264.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_265.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_265.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_266.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_266.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_267.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_267.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_268.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_268.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_269.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_269.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_270.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_270.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_271.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_271.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_272.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_272.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_273.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_273.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_274.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_274.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_275.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_275.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_276.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_276.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_277.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_277.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_278.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_278.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_279.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_279.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_280.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_280.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_281.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_281.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_282.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_282.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_283.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_283.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_284.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_284.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_285.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_285.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_286.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_286.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_287.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_287.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_288.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_288.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_289.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_289.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_290.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_290.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_291.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_291.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_292.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_292.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_293.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_293.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_294.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_294.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_295.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_295.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_296.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_296.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_297.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_297.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_298.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_298.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_299.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_299.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_300.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_300.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_301.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_301.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_302.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_302.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_303.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_303.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_304.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_304.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_305.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_305.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_306.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_306.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_307.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_307.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_308.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_308.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_309.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_309.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_310.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_310.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_311.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_311.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_312.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_312.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_313.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_313.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_314.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_314.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_315.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_315.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_316.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_316.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_317.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_317.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_318.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_318.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_319.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_319.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_320.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_320.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_321.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_321.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_322.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_322.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_323.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_323.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_324.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_324.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_325.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_325.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_326.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_326.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_327.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_327.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_328.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_328.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_329.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_329.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_330.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_330.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_331.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_331.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_332.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_332.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_333.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_333.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_334.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_334.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_335.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_335.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_336.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_336.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_337.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_337.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_338.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_338.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_339.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_339.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_340.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_340.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_341.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_341.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_342.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_342.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_343.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_343.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_344.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_344.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_345.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_345.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_346.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_346.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_347.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_347.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_348.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_348.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_349.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_349.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_350.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_350.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_351.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_351.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_352.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_352.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_353.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_353.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_354.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_354.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_355.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_355.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_356.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_356.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_357.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_357.jpg"},{"full":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_1600/cat_images/img-_358.jpg","thumb":"https://res.cloudinary.com/fqsd4oea/image/upload/f_auto,q_auto,w_160,h_120,c_fill/cat_images/img-_358.jpg"}];</script>
+<div class="gallery-container" style="display:flex; flex-direction:column; align-items:center; max-width:900px; margin:40px auto;">
+<div class="main-stage" style="width:100%; height:60vh; display:flex; align-items:center; justify-content:center; background:#000; border-radius:12px; overflow:hidden;">
+<pre><code>&lt;img id="active-view" src="" alt="Loading Gallery..." style="max-width:100%; max-height:100%; object-fit:contain; transition:opacity .2s ease-in-out;"&gt;</code></pre>
+</div>
+<div class="navigation-controls" style="display:flex; align-items:center; justify-content:center; gap:40px; margin:20px 0 30px; width:100%;">
+<pre><code>&lt;button class="btn btn-outline-light" id="prev-btn" style="padding:8px 24px; font-size:18px;"&gt;&amp;larr;&lt;/button&gt;
+&lt;span id="counter-display" style="font-variant-numeric:tabular-nums; letter-spacing:1px; color:#aaa;"&gt;0 / 0&lt;/span&gt;
+&lt;button class="btn btn-outline-light" id="next-btn" style="padding:8px 24px; font-size:18px;"&gt;&amp;rarr;&lt;/button&gt;</code></pre>
+</div>
+<div id="dock-strip" class="thumbnail-dock" style="display:flex; gap:10px; width:100%; overflow-x:auto; padding-bottom:10px; scroll-behavior:smooth;">
+
+</div>
+</div>
+<script>
+let currentIndex = 0;
+const activeView = document.getElementById('active-view');
+const counterDisplay = document.getElementById('counter-display');
+const dockStrip = document.getElementById('dock-strip');
+
+// 1. Build the thumbnail strip
+imagesArray.forEach((img, idx) => {
+  const t = document.createElement('img');
+  t.src = img.thumb;
+  t.loading = "lazy";
+  t.alt = `Thumbnail ${idx + 1}`;
+  t.style = "width:80px; height:60px; object-fit:cover; flex-shrink:0; cursor:pointer; border-radius:6px; opacity:.4; border:2px solid transparent; transition:all .2s ease;";
+  t.addEventListener('click', () => updateGallery(idx));
+  dockStrip.appendChild(t);
+});
+
+// 2. Show a given image and highlight its thumbnail
+function updateGallery(newIndex) {
+  const thumbs = dockStrip.children;
+
+  if (thumbs[currentIndex]) {
+    thumbs[currentIndex].style.opacity = "0.4";
+    thumbs[currentIndex].style.borderColor = "transparent";
+  }
+
+  currentIndex = newIndex;
+
+  if (thumbs[currentIndex]) {
+    thumbs[currentIndex].style.opacity = "1";
+    thumbs[currentIndex].style.borderColor = "#00ffff";
+    thumbs[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  }
+
+  activeView.style.opacity = "0.3";
+  activeView.onload = () => { activeView.style.opacity = "1"; };  // set BEFORE src
+  activeView.src = imagesArray[currentIndex].full;
+  counterDisplay.innerText = `${currentIndex + 1} / ${imagesArray.length}`;
+}
+
+// 3. Buttons and keyboard
+const nextSlide = () => updateGallery((currentIndex + 1) % imagesArray.length);
+const prevSlide = () => updateGallery((currentIndex - 1 + imagesArray.length) % imagesArray.length);
+
+document.getElementById('next-btn').addEventListener('click', nextSlide);
+document.getElementById('prev-btn').addEventListener('click', prevSlide);
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight') nextSlide();
+  if (e.key === 'ArrowLeft') prevSlide();
+});
+
+updateGallery(0);
+</script>
+<hr>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
